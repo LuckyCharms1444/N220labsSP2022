@@ -22,14 +22,19 @@ function setup(){
 //function to get things on the screen 
 function draw(){
 
+    //first color and outline of the shape
     stroke(255,90,90);
     fill(40,55,250);
+    //first shape using variables
     circle(x,y,size + 50);
+    //noes
     rect(x+100,y+100,x-100,y-100);
     circle(x+300,y,size + 50);
+    //change color
     fill(255,100,50);
     circle(x,y,size);
     circle(x+300,y,size);
+    //change colors
     fill(255,0,0);
     arc(x+150,y+300,200,200,50,PI, CHORD)
 
