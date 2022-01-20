@@ -1,7 +1,7 @@
 //universal var
 let x = 10;
 let y = 10;
-size = 25;
+let size = 25;
 
 
 //setup
@@ -10,27 +10,23 @@ function setup(){
 }
 
 function draw(){
+    //refresh background
 background(255,255,255);
 
 
 //compare where x and y are to mouseX and mouseY
 if (x > mouseX){
     x = x- 1;
-    console.log("X decrease");
 }else{
     x = x + 1;
-    console.log("X increase");
 }
 if (y > mouseY){
     y = y - 1;
-    console.log("y decrease");
 }else{
     y = y + 1;
-    console.log("y increase");
 }
-
+//draw circle
 circle(x,y,size);
-
 
 //if mouseClick 
 if(mouseIsPressed){
@@ -42,7 +38,5 @@ if(mouseIsPressed){
 }
 
 
-//refresh background
-console.log(x,y);
 
 }
