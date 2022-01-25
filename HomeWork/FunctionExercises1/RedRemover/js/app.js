@@ -7,6 +7,7 @@ N220
 
 //function that removes red out of it
 function noRed(r,b,g){
+    
     //console.log(r);
     //console.log(b);
     //console.log(g);
