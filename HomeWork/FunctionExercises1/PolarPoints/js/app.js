@@ -20,7 +20,9 @@ function setup(){
 
 function draw(){
     background(0,0,0);
-    let res = polarPoint(1000);
+    let res = polarPoint(10);
     translate(100,100);
+    console.log(res.x);
+    console.log(res.y);
     circle(res.x,res.y,10);
 }
