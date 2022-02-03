@@ -5,6 +5,7 @@ N220
 */
 
 //function creates car and 2 parameters
+
 function createCar(x,y){
     //refreash background
     background(255.255,255);
@@ -21,6 +22,7 @@ function createCar(x,y){
     circle(x+300,y + 100,50);
 
 }
+
 
 //create canvas
 function setup(){

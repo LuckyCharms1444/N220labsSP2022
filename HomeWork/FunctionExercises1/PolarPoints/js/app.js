@@ -9,7 +9,7 @@ N220
 //polarPoint function with 1 parameter
 function polarPoint(r){
     let x = r * Math.sin(mouseX);
-    let y = Math.cos(mouseX);
+    let y = Math.cos(mouseY);
     return createVector(x,y);
 }
 
@@ -20,7 +20,7 @@ function setup(){
 
 function draw(){
     background(0,0,0);
-    let res = polarPoint(10);
+    let res = polarPoint(100);
     translate(100,100);
     console.log(res.x);
     console.log(res.y);
