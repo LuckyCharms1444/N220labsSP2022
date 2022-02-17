@@ -13,6 +13,7 @@ for(let i = 1; i <= 25; i++){
     document.body.appendChild(createD);
 
     //scenerios for different conditions and still outputs i
+    //I used Mod to see if there is a remainder
     if(i%3 == 0 && i%5 == 0){
         createD.append("beepbop")
     }else if(i%3 == 0){
