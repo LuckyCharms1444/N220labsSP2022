@@ -19,7 +19,9 @@ let but = document.createElement("button");
 
 //put things on screen
 but.innerHTML = qa[i].questions;
+//set attribute
 but.setAttribute("data-answer",qa[i].answers);
+//add event listener
 but.addEventListener("click",nextA);
 
 //add on the page
@@ -34,9 +36,12 @@ document.body.appendChild(breaks);
 
 //funtion that takes an event
 function nextA(event){
-let answer1 = event.target.dataset.answer;
-let div = document.getElementById("dva");
-div.innerHTML = answer1;
+    //target the data 
+    let answer1 = event.target.dataset.answer;
+    //get the div
+    let div = document.getElementById("dva");
+    //put data on page
+    div.innerHTML = answer1;
 }
 
 

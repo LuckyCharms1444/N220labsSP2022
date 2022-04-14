@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #myDiv{
+                height:100px;
+                width:400px;
+                background-color: rgb(0,0,0);
+            }
+        </style>
+</head>
+<body>
+        <div id="myDiv"></div>
+        <br>
+        <div id="rgbLine"></div>
+        <br>
+        <table>
+            <tr>
+                <th>Red: </th>
+                <th><button data-color="r" class="red" id="r" value="1" onclick="handleClick(event)">+1</button> </th>
+                <th><button data-color="r" class="red" id="r" value="5" onclick="handleClick(event)">+5</button> </th>
+                <th><button data-color="r" class="red" id="r" value="10" onclick="handleClick(event)">+10</button> </th>
+            </tr>
+            <tr>
+                <th>Green: </th>
+                <th><button data-color="g" class="green" id="g" value="1" onclick="handleClick(event)">+1</button> </th>
+                <th><button data-color="g" class="green" id="g" value="5" onclick="handleClick(event)">+5</button> </th>
+                <th><button data-color="g" class="green" id="g" value="10" onclick="handleClick(event)">+10</button> </th>
+            </tr>
+            <tr>
+                <th>Blue: </th>
+                <th><button data-color="b" class="blue" id="b" value="1" onclick="handleClick(event)">+1</button> </th>
+                <th><button data-color="b" class="blue" id="b" value="5" onclick="handleClick(event)">+5</button> </th>
+                <th><button data-color="b" class="blue" id="b" value="10" onclick="handleClick(event)">+10</button> </th>
+            </tr>
+        </table>
+        <br>
+        <p>Reset:</p>
+        <button id="reset" onclick="handleClick(event)" class="reset" data-color="reset" >reset here</button>
+
+        <script src="js/app.js"></script>
+</body>
+</html>
