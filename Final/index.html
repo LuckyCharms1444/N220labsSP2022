@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+<style>
+    .myDiv{
+        height: 50px; width: 50px;
+        padding:15px; margin: 10px;
+        float: 5px;
+        background: black;
+    }
+</style>
+
+
+</head>
+<body>
+<h1>Welcome to the Concentration Game</h1>
+<p id="numWin">Number of wins: </p>
+
+<br/>
+
+<table>
+    <tr>
+        <th id="1" class="myDiv" data-color="" data-number="1" onclick="pick(event)"></th>
+        <th id="2" class="myDiv" data-colort="" data-number="2" onclick="pick(event)"></th>
+        <th id="3" class="myDiv" data-color="" data-number="3" onclick="pick(event)"></th>
+        <th id="4" class="myDiv" data-color="" data-number="4" onclick="pick(event)"></th>       
+    </tr>
+    <tr>       
+         <th id="5" class="myDiv" data-color="" data-number="5" onclick="pick(event)"></th>
+        <th id="6" class="myDiv" data-color="" data-number="6" onclick="pick(event)"></th>
+        <th id="7" class="myDiv" data-color="" data-number="7" onclick="pick(event)"></th>
+        <th id="8" class="myDiv" dataset="" data-number="8" onclick="pick(event)"></th>       
+    </tr>
+    <tr>
+        <th id="9" class="myDiv" data-color="" data-number="9" onclick="pick(event)"></th>
+        <th id="10" class="myDiv" data-color="" data-number="10" onclick="pick(event)"></th>
+        <th id="11" class="myDiv" data-color="" data-number="11" onclick="pick(event)"></th>
+        <th id="12" class="myDiv" data-color="" data-number="12" onclick="pick(event)"></th>       
+    </tr>
+    <tr>
+        <th id="13" class="myDiv" data-color="" data-number="13" onclick="pick(event)"></th>
+        <th id="14" class="myDiv" data-color="" data-number="14" onclick="pick(event)"></th>
+        <th id="15" class="myDiv" data-color="" data-number="15" onclick="pick(event)"></th>
+        <th id="16" class="myDiv" data-color="" data-number="16" onclick="pick(event)"></th>       
+    </tr>
+  <br/>
+  <br/>
+  <h1 id="win"></h1>
+  <button onclick="reset()">Click to reset</button>
+  <button onclick="pick(event)" data-kill="1">Click here to check win!</button>
+
+</table>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
